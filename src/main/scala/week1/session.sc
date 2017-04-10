@@ -33,4 +33,7 @@ object session {
   sqrt(0.1e-20)
   sqrt(1.0e20)
   sqrt(1.0e50)
+  sqrt(36)
+  sqrt(4)
+  sqrt(2)
 }
