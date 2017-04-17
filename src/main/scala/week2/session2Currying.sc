@@ -1,4 +1,14 @@
+
 object session2Currying {
+
+  type Set = Int => Boolean
+
+  /**
+    * Indicates whether a set contains a given element.
+    */
+  def contains(s: Set, elem: Int): Boolean = s(elem)
+
+  contains(Set(1,2,3), 1)
 
   def sum(f: Int => Int) : (Int, Int) => Int = {
     def sumF(a: Int, b: Int): Int =
